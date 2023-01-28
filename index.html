@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Crear Cuenta</title>
+  </head>
+      <body>
+        <div class="form-container">
+          <form onsubmit="return handleFormSubmit(event)">
+            <h4>Create Account</h4>
+            <div class="input-container">
+            <label for="name"><h2>Nombre</h2></label>
+            <input type="text" id="name" name="name" class="input-field" oninput="validateName()" >
+            <img src="img/error.svg" id="error-img" style="display: none;">
+            <img src="img/success.svg" id="success-img" style="display: none;">
+            <span class="error-container" id="name-error"></span>
+            <span class="error-svg" id="name-error-svg">
+            <svg class="error-icon" viewBox="0 0 24 24"><path d="M13.414 12l5.793-5.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L12 10.586 6.207 4.793c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L10.586 12l-5.793 5.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 13.414l5.793 5.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L13.414 12z"/></svg>
+          </span>
+        </div>
+      <div class="input-container">
+          <label for="email"><h2>Email</h2></label>
+          <input type="email" id="email" name="email" class="input-field" oninput="validateEmail()" >
+          <img src="img/error.svg" id="email-error-img" style="display: none;">
+          <img src="img/success.svg" id="email-success-img" style="display: none;">
+          <span class="error-container" id="email-error"></span>
+          <span class="error-svg" id="email-error-svg">
+          <svg class="error-icon" viewBox="0 0 24 24"><path d="M13.414 12l5.793-5.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L12 10.586 6.207 4.793c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L10.586 12l-5.793 5.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 13.414l5.793 5.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L13.414 12z"/></svg>
+        </span>
+      </div>
+    <div class="input-container">
+          <label for="password"><h2>Clave</h2></label>
+          <input type="password" id="password" name="password" class="input-field" minlength="1" maxlength="8" oninput="validatePassword()" >
+          <img src="img/error.svg" id="password-error-img" style="display: none;">
+          <img src="img/success.svg" id="password-success-img" style="display: none;">
+          <span class="error-container" id="password-error"></span>
+          <span class="error-svg" id="password-error-svg">
+          <svg class="error-icon" viewBox="0 0 24 24"><path d="M13.414 12l5.793-5.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L12 10.586 6.207 4.793c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L10.586 12l-5.793 5.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 13.414l5.793 5.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L13.414 12z"/></svg>
+      </span>
+    </div>
+    <div class="input-container">
+          <label for="password_confirm"><h2>Confirme su clave</h2></label>
+          <input type="password" id="password_confirm" name="password_confirm" class="input-field" maxlength="8" oninput="validatePasswordConfirm()">
+          <img src="img/error.svg" id="password_confirm-error-img" style="display: none;">
+          <img src="img/success.svg" id="password_confirm-success-img" style="display: none;">
+          <span class="error-container" id="password_confirm-error"></span>
+          <span class="error-svg" id="password_confirm-error-svg">
+          <svg class="error-icon" viewBox="0 0 24 24"><path d="M13.414 12l5.793-5.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L12 10.586 6.207 4.793c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L10.586 12l-5.793 5.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 13.414l5.793 5.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L13.414 12z"/></svg>
+      </span>
+    </div>
+    <input type="submit" value="ENVIAR">
+   </form>
+  </div>
+ </body>
+</html>
